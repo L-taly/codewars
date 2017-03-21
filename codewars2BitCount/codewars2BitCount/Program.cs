@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 namespace codewars2BitCount
 {
     class Program
@@ -16,6 +16,10 @@ namespace codewars2BitCount
                 n = n / 2;
             }
             return count;
+        }
+        public static int CountBits2(int n)
+        {
+            return Convert.ToString(n, 2).Count(x => x == '1');
         }
         static void Main(string[] args)
         {
