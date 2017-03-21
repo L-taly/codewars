@@ -4,6 +4,7 @@ namespace codewars2BitCount
 {
     class Program
     {
+        //1
         public static int CountBits(int n)
         {
             int count = 0;
@@ -17,6 +18,7 @@ namespace codewars2BitCount
             }
             return count;
         }
+        //2
         public static int CountBits2(int n)
         {
             return Convert.ToString(n, 2).Count(x => x == '1');
